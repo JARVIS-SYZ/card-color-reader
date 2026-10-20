@@ -10,7 +10,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --experimental-strip-types --test tests/cards.test.ts",
+    "test": "node --experimental-strip-types --test tests/cards.test.ts tests/rank-shape.test.ts",
     "deploy:prepare": "npm test && npm run build && node scripts/prepare-pages.mjs"
   },
   "dependencies": {
